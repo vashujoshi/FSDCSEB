@@ -1,0 +1,34 @@
+    .container{
+        background-color: bisque;
+        height: 400px;
+        width: 1000px;
+        background-color: aqua;
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        /* new line mai ane ke lie */
+        flex-wrap: wrap; 
+        justify-content: space-around;
+        align-items: center;
+     }
+
+     .child1,.child2,.child3,.child4{
+        height: 300px;
+        border: 2px solid;
+        width: 220px;
+      }
+      .child1{
+        display: flex;
+      }
+
+      
+
+      .child11,.child12,.child13,.child14{
+       
+        border: 4px solid;
+
+      }
+      .child11,.child12{
+    
+      }
+  
