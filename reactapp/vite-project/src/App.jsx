@@ -1,22 +1,40 @@
-import React from "react";
-import Student from "./student";
-
-function App() 
+import React from 'react'
+import Student from './student';
+function App()
 {
+  const h1=<h1>hello world</h1>;
   const mystyle={
-    color:"red",backgroundColor:'yellow'
+    color:'red',
+    backgroundColor:'yellow'
   }
-  
   return (
-    <div style={{backgroundColor:'cyan'}}>
+    <div style={{backgroundColor:'blueviolet'}}>
       {h1}
-      <div style={mystyle}>
-        Abes Engineering College
+      <div style={mystyle}> 
+        ABes Engineering college
       </div>
-      
-      <Student college="Abes Engineering College"
-      name=""/>
+      <div style={{display:'flex'}}>
+        <Student college="ABES ENGINEERING COLLEGE"
+        name="harshit"
+        branch="cse"
+        Roll="12"
+        section="a" 
+        pic={<img src='https://commondatastorage.googleapis.com/codeskulptor-demos/riceracer_assets/img/srixner.png' height={100} width={100}/>}
+       />
+
+        <Student college="ABES ENGINEERING COLLEGE"
+        name="verma"
+        branch="cse"
+        Roll="13"
+        section="a" />
+         <Student college="ABES ENGINEERING COLLEGE"
+        name="verma"
+        branch="cse"
+        Roll="13"
+        section="a" />
+
+      </div>
     </div>
   )
 }
-export default App;
+export default App
